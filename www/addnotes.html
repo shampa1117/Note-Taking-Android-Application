@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Expense Tracking Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="jquery.mobile-1.4.2.min.css" />
+        <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="jquery.mobile-1.4.2.min.js"></script>
+        <script src="application.js"></script>
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="header">
+                <a href="index.html">Home</a>
+                <h1>Note-taking App</h1>
+                <a href="listnotes.html" data-ajax="false">List Notes</a> 
+            </div>
+            <div data-role="content">
+                <form>
+                    <div>
+                   <select id="selectItem">
+                    <option value="Food">Food</option>
+                    <option value="Rent">Rent</option>
+                  <option value="Grocery">Grocery</option>
+                  <option value="Cloth">cloth</option>
+                   </select>
+  
+                    </div>
+                    <div>
+                        <input id="title" type="text" placeholder="Add a Amount" />
+                    </div>
+                    <div>
+                        <textarea id="note" placeholder="Item Desp"></textarea>
+                    </div>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <input id="btnReset" type="submit" value="Reset" />
+                        </div>
+                        <div class="ui-block-b">
+                            <input id="btnAddNote" type="button" value="Add Expnse" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div data-role="footer">
+                <h4>&copy; 2014-2015</h4>
+            </div>
+        </div>
+    </body>
+</html>
